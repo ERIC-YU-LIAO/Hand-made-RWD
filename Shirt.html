@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+    *{
+        /* border:1px solid red; */
+    }
+    
+
+    .nav{
+        background-color: #444444;
+        height: 100px;
+    }
+    .nav-a{
+        font-size: 150px;
+        margin: 30px;
+        color: white;
+        font-size: 20px;
+    }
+    .logo{
+        color:white;
+        margin-top: 25px;
+    }
+    .head-col{
+        background-color: #364f6b;
+        color: #f5f5f5;
+
+    }
+    .head-img{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        /* background-image: url("https://static.wixstatic.com/media/a9ff3b_3be32fd5866944a0b2bd867c8e0dbaf9.jpg/v1/fill/w_490,h_470,al_c,q_80,usm_0.66_1.00_0.01/a9ff3b_3be32fd5866944a0b2bd867c8e0dbaf9.webp"); */
+    }
+    .head-bgc{
+        background-color:#E5F9FA;
+    }
+    .tile1{
+        text-align: center;
+        font-size: 50px;
+        margin-top: 70px;
+        
+    }
+    .tile2{
+        text-align: center;
+        font-size: 30px;
+        margin-top: 10px;
+        font-weight: 400;
+    }
+    .tile2::before{
+        content: "";
+        display: block;
+        background-color:#f5f5f5;
+        width: 111px;
+        height: 5px;
+        margin: 50px 160px;
+        opacity: 0.7;
+    }
+    .tilebtn{
+        margin: 20px 140px;
+    }
+    .title-gril{
+        background-color: #ea5455;
+        color: white;
+
+    }
+
+    .txt-new{
+        text-align: center;
+        /* background-color: red; */
+
+    }
+
+    .card-body{
+        background-color:#f0f5f9;
+        color: #52616b;
+    }
+    .card-title{
+        display: flex;
+        /* background-color:RED; */
+        flex-direction: row;
+        justify-content: center;
+    }
+    .card{
+        margin: 30px;
+    }
+    .card h3,p{
+        text-align: center;
+    }
+    .new-arrived h4{
+        text-align: center;
+        font-size: 50px;
+        font-weight: 400;
+        margin: 50px;
+    }
+    .arrived-text h4,h3{
+        text-align: center;
+        margin: 20px;
+        font-size: 30px;
+    }
+    .input{
+        position: relative;
+        left: 43%;
+        right: 30%;
+        width: 300px;
+    }
+    .input:hover{
+        border: 3px solid #004400;
+    }
+
+    .btnnew{
+        position: relative;
+        left: 43%;
+        right: 20%;
+        width: 280px;
+        height: 50px;
+        margin: 10px;
+        font-size: 20px;
+        color: green;
+        margin-bottom: 120px; 
+    }
+
+    #disscount{
+        background-color:#2E2E2E;
+        height: 60vh;
+    }
+
+    .pic{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .pic1{
+        background-image: url(https://static.wixstatic.com/media/a9ff3b_1ba82db8bcf84c41a63122150bf912e3.jpg/v1/fill/w_458,h_426,al_c,q_80,usm_0.66_1.00_0.01/a9ff3b_1ba82db8bcf84c41a63122150bf912e3.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 30px;
+        height: 350px;
+        width: 450px;
+        opacity: 0.9;
+        margin-top: 80px;
+    }
+    .pic2{
+        background-image: url(https://static.wixstatic.com/media/a9ff3b_cf3a4b4ab48649a98e7b61f4b1bc0694.jpg/v1/fill/w_458,h_426,al_c,q_80,usm_0.66_1.00_0.01/a9ff3b_cf3a4b4ab48649a98e7b61f4b1bc0694.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 30px;
+        height: 350px;
+        width: 450px;
+        opacity: 0.9;
+        margin-top: 80px;
+    }
+    .pic h1{
+        text-align: center;
+        margin-top: 130px;
+        color:white;
+        font-size: 40px;
+    }
+    .pic span{
+        text-align: center;
+        display: block;
+        margin: 10px;
+        color:white;
+        font-size: 20px;
+    }
+    #policy{
+        background-color: #eaeaea;
+        height: 30vh;
+    }
+    .col-2{
+        color: #9c9baf;
+        margin-top: 40px;
+        padding: 20px;
+        font-size: 14px;
+        border-left: 1px solid #c5c5ca;
+        padding: 12px;
+        height: 180px;
+    }
+    .col-2 h4{
+        margin-bottom: 20px;
+        margin-left: -30px;
+        text-align: center;
+    }
+    .col-2 li{
+        list-style: none;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    #footer{
+        height: 100px;
+        background-color:#2E2E2E;
+        color:blanchedalmond;
+        text-align: center;
+
+    }
+
+    #footer .row{
+        color:white;
+        text-align: center;
+        font-size: 10px;
+        margin-left: 380px;
+    }
+    #footer .row h3{
+        font-size: 24px;
+        }
+
+    </style>
+    </head>
+  <body>
+    <div id="navbar">
+        <ul class="nav justify-content-center nav">
+            <li class="nav-item">
+                <h1 class="logo">HOME</h1>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active nav-a" href="#">COLLECTION</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active nav-a" href="#">LOOKBBOK</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active nav-a" href="#">CUSTOMER CARE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active nav-a" href="#">VISIST US</a>
+            </li>
+    </ul>
+    </div>
+
+    <div id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3 head-bgc"></div>
+                <div class="col-3 head-img"><img src="https://static.wixstatic.com/media/a9ff3b_3be32fd5866944a0b2bd867c8e0dbaf9.jpg/v1/fill/w_490,h_470,al_c,q_80,usm_0.66_1.00_0.01/a9ff3b_3be32fd5866944a0b2bd867c8e0dbaf9.webp" alt=""></div>
+                <div class="col-3 title-gril">
+                    <h1 class="tile1">SULTRY & SMART</h1>
+                    <h4 class="tile2">HOT SPRING LOOKS</h4>
+                    <button type="button" class="btn btn-outline-info btn-lg tilebtn">Shop/Woman</button>
+
+                </div>
+                <div class="col-3 head-bgc"></div>
+            </div>
+        </div>
+        <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3 head-bgc"></div>
+                    <div class="col-3 head-col">
+                            <h1 class="tile1">SULTRY & SMART</h1>
+                            <h4 class="tile2">HOT SPRING LOOKS</h4>
+                            <button type="button" class="btn btn-outline-info btn-lg tilebtn">Shop/Woman</button>
+                        </div>
+                    <div class="col-3 head-img"><img src="https://static.wixstatic.com/media/a9ff3b_e3d29ce5f3e946e2b2b4c710e6e7ca75.jpg/v1/fill/w_490,h_470,al_c,q_80,usm_0.66_1.00_0.01/a9ff3b_e3d29ce5f3e946e2b2b4c710e6e7ca75.webp" alt=""></div>
+                    <div class="col-3 head-bgc"></div>
+                </div>
+            </div>
+    </div>
+
+
+    <div id="content">
+        <div class="container-fluid">
+            <div class="col-12 new-arrived">
+                <h4>最新商品</h4>
+
+     <div class="row card-title">
+        <div class="card" style="width: 18rem;">
+            <img src="https://static.wixstatic.com/media/84770f_92ad288f7eb849c68652826216de56dc.png/v1/fill/w_315,h_414,al_c,q_85,usm_0.66_1.00_0.01/84770f_92ad288f7eb849c68652826216de56dc.webp" class="card-img-top" class="card-img-top" alt="...">
+                 <div class="card-body">
+                    <h3>PLEATED SKIRT</h3>
+                    <p>$990</p>
+            </div>
+            </div>
+                    <div class="card" style="width: 18rem;">
+                            <img src="https://static.wixstatic.com/media/84770f_fa2cb753b49b43faa1e9b3da2e8f72c0.png/v1/fill/w_315,h_414,al_c,q_85,usm_0.66_1.00_0.01/84770f_fa2cb753b49b43faa1e9b3da2e8f72c0.webp" class="card-img-top" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3>PLEATED SKIRT</h3>
+                                <p>$990</p>
+                            </div>
+                          </div>
+                          <div class="card" style="width: 18rem;">
+                                <img src="https://static.wixstatic.com/media/84770f_8745e3f04d8e4662ba23b4d575602616.png/v1/fill/w_315,h_414,al_c,q_85,usm_0.66_1.00_0.01/84770f_8745e3f04d8e4662ba23b4d575602616.webp" class="card-img-top" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3>PLEATED SKIRT</h3>
+                                    <p>$990</p>
+                                </div>
+                              </div>
+
+        </div>
+            <div class="arrived-text">        
+                <h4>GET ON THE LIST</h4>
+                <h3>and be the first to shop new arrivals and exclusive promotions.</h3>
+            </div>
+            <div><input class="input" type="text" placeholder="請輸入Email"></div>
+                <button type="button" class="btn btn-outline-success btnnew">Primary</button>
+        </div>    
+        </div>
+    </div>
+
+    <div id="disscount">
+        <div class="container-fluid">
+            <div class="row pic">
+                <div class="pic1 ">
+                    <h1>SWOON-WORTHY</h1>
+                    <span>ACCESSORIES</span>
+                </div>
+                <div class="pic2">
+                    <h1>WINTER SALE <span>NOW 30% OFF</span></h1>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="policy">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-2">
+                        <h4>VESTE</h4>
+                </div>
+                <div class="col-2">
+                    <h4>CUSTOMER CARE</h4>
+                    <ul>
+                        <li>Shipping Policy></li>
+                        <li>Returns Policy></li>
+                        <li>Contact Us></li>
+                        <li>About Us></li>
+                    </ul>
+
+                </div>
+                <div class="col-2">
+                        <h4>VIST OUR STORE</h4>
+                        <ul>
+                            <li>500 Terry Francois Street</li>
+                            <li>San Francisco, CA 94158</li>
+                        </ul>
+                </div>
+                <div class="col-2">
+                        <h4>TAY CONNECTED</h4>
+                        <ul>
+                            <li><img src="https://static.wixstatic.com/media/d7ffe259c9e54f59837481b3dd0130eb.png/v1/fill/w_30,h_30,al_c,q_80,usm_0.66_1.00_0.01/d7ffe259c9e54f59837481b3dd0130eb.webp" alt=""></li>
+                            <li><img src="https://static.wixstatic.com/media/d3470ec8ca26475da4b228f0199b5d3d.png/v1/fill/w_30,h_30,al_c,q_80,usm_0.66_1.00_0.01/d3470ec8ca26475da4b228f0199b5d3d.webp" alt=""></li>
+                        </ul>
+                </div>
+               
+
+            </div>
+        </div>
+    </div>
+
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <h3>© 2019 by Eic Liao created</h3>
+                </div>
+            </div>
+           
+        </div>
+
+
+
+    
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

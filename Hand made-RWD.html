@@ -76,6 +76,12 @@
 * {
   margin: 0px;
   padding: 0px;
+  /* border: 1px solid red; */
+  /* border: 1px solid red; */
+}
+h3,p,li{
+    color:#63707e;
+    padding: 10px
 }
 
 /* body {
@@ -87,21 +93,23 @@
   max-width: 1200px;
   margin: 10px auto;
   padding: 10px;
-  background-color: white;
+  background-color: #fafafa;
   border-radius: 6px;
   height: 8vh;
-  /* opacity: ; */
+  opacity: 0.98;
+  
 }
 
 .logo {
-  padding: 0px 30px;
-  color: #069370;
+  margin: 5px;
+  color: #63707e;
   height: 40px;
   font-size: 50px;
   line-height: 60px;
   box-sizing: border-box;
   font-weight: 900;
   float: left;
+  
 }
 
 .nav {
@@ -109,8 +117,8 @@
   float: right;
 }
 .nav ul {
-  padding: 0px;
-  margin: 0px;
+  padding: 5px;
+  margin: 5px;
 }
 .nav ul li {
   position: relative;
@@ -118,11 +126,12 @@
   list-style: none;
   padding-left: 50px;
   font-size: 25px;
+  font-weight: 900;
 }
 .nav ul li a {
   display: block;
   padding: 10px 20px;
-  color: #069370;
+  color: #63707e;
   text-decoration: none;
 }
 .nav ul li a:hover {
@@ -136,20 +145,51 @@
       
   }
 
-@media (max-width: 1200px) {
-  header {
+  @media (max-width: 1200px) {
+      .header{
+        position: relative;
+        max-width: 1200px;
+        padding: 30px;
+        background-color: #f6f6f6;
+        border-radius: 6px;
+        height: 7vh;
+        margin: 0;
+                
+      }
+      .nav{
+          display: none;
+      }
+      .logo{
+         position: relative;
+         left: 40%;
+         right: 30%;
+      }
+  }
+
+
+@media (max-width: 768px) {
+  /* .header {
     position: relative;
     max-width: 1200px;
-    margin: 30px;
-    padding: 12px;
-    background-color: red;
+    padding: 30px;
+    background-color: #f6f6f6;
     border-radius: 6px;
-  }
+    height: 7vh;
+    
+  } */
+  h3,p,li{
+    /* color:#63707e; */
+    padding: 10px
+}
 
   .logo {
     margin-top: 0px;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
+    position: relative;
+    left: 5%;
+    /* right: 35%; */
+   
   }
 
   .menu-toggle {
@@ -199,11 +239,12 @@
 
   .nav.active {
     display: block;
-    background-color: white;
-    margin-top: 1%;
-    margin-right: 50%;
-    transition: 0.7s;
+    background-color: #f6f6f6;
+    transition-duration: 3.1s;
     border-radius: 5px;
+    position: absolute;
+    right: 50%;
+    top: 90%
   }
   .nav.active ul {
     display: block;
@@ -216,7 +257,7 @@
   .nav.active ul li a {
     display: block;
     padding: 10px 20px;
-    color: #069370;
+    color: #63707e;
     text-decoration: none;
   }
 
@@ -407,7 +448,7 @@
     }
     .title{
         margin-bottom: 50px ;
-        background-color:#63707e;
+        background-color:#f6f6f6;
         padding: 30px 10px
 
     }
@@ -415,12 +456,12 @@
         font-size: 50px;
         margin: 22px;
         text-align: center;
-        color:#f2f6f5;
+        color: #63707e;
     }
     .title p{
         font-size: 22px;
         text-align: center;
-        color:#c8dad3;
+        color:#63707e;
         padding: 30px 10px;
     }
     #about .text li{
@@ -558,6 +599,9 @@
         .itemgroup{
             display: flex;
         }
+        /* .itemgroup .item .text{
+            padding: 20px;
+        } */
         #service .item{
             display: flex;
         }
@@ -605,7 +649,11 @@
             background-color:whitesmoke;
             opacity: 0.3;
         }
+        #about{
+            width: 100%;
+        }
         #about .pic img{
+        /* width: 10%; */
         height: 360px;
         }
         
@@ -646,7 +694,7 @@
         
 
         <div class="header"> 
-                <div class="logo" href="">R&Wwb</div>
+                <div class="logo" href=""><h3>R&Wwb</h3></div>
                 <div class="menu-toggle"><span> </span></div>
                 <nav class="nav">
                   <ul>
@@ -661,10 +709,11 @@
 
 
     <!-- ///--main---/// -->
-
     <div class="banner">
            <div class="mainbanner">
-               <h3 class="maintitle">Welcome To RWD.Website</h3>
+               <h3 class="maintitle">Welcome To RWD.Web</h3>
+               <!-- <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+               <img src="https://images.pexels.com/photos/1167021/pexels-photo-1167021.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""> -->
         <!-- <img src="https://images.pexels.com/photos/2174656/pexels-photo-2174656.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""> -->
     </div>
     </div>
@@ -672,8 +721,8 @@
     <div id="about">
         <div class="container">
             <div class="title">
-                <h2>About Responsive Web Design</h2>
-                <p>響應式網頁設計（通常縮寫為RWD），或稱自適應網頁設計、回應式網頁設計、對應式網頁設計。是一種網頁設計的技術做法，該設計可使網站在不同的裝置（從桌面電腦顯示器到行動電話或其他行動產品裝置）上瀏覽時對應不同解析度皆有適合的呈現，減少使用者進行縮放、平移和捲動等操作行為。</p>
+                <h2>響應網站介紹及設計</h2>
+                <p><b>介紹關於</b>響應式網頁設計（通常縮寫為RWD），或稱自適應網頁設計、回應式網頁設計、對應式網頁設計。是一種網頁設計的技術做法，該設計可使網站在不同的裝置（從桌面電腦顯示器到行動電話或其他行動產品裝置）上瀏覽時對應不同解析度皆有適合的呈現，減少使用者進行縮放、平移和捲動等操作行為。</p>
             </div>
             <div class="itemgroup">
                 <div class="item">
@@ -721,8 +770,9 @@
                                 <img src="https://images.pexels.com/photos/2527713/pexels-photo-2527713.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
                             </div>
                             <div class="text">
-                                <h3>Service For Everyone</h3>
-                                <p>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.</p>
+                                <h3>響應式網站建設帶來哪些好處</h3>
+                                <p>兼容多個終端和瀏覽器。移動端，也是現在很多人瀏覽
+                                的網頁的方式。如果在網站製作當中，僅僅只是滿足於PC終端，對於移動端的用戶，無疑也是造成了最大的煩腦，那麼也就無法專注於瀏覽網頁。無法兼容多個瀏覽器，必然也失去客戶的操作。兼容多個瀏覽器，並且也是現在用戶常用的幾個瀏覽器，根據不同的瀏覽休驗，也能尋得網站的足蹤影，這也是關於在選擇適合的定製網站方案。</p>
                             </div>
                 </div>
             
@@ -736,7 +786,7 @@
                 <div class="itemgroup">
                     <div class="item">
                     <div class="text">
-                    <h3>Contact</h3>
+                    <h3>聯絡方式</h3>
                     <hr>
                       <a href="">Tel/0977184071</a>
                       <a href="">Mail/acc90301@gmail</a>
@@ -747,16 +797,16 @@
                     </div>
                     <div class="item">
                         <div class="text">
-                            <h3>Info</h3>
+                            <h3>意見提供資訊</h3>
                             <hr>
                         <form action="">
                             <label for="">Name</label>
-                            <input class="input" type="textsss" placeholder="姓名">
+                            <input class="input" type="textsss"  placeholder="姓名">
                             <label for="">Phone</label>
-                            <input class="input" type="text"　 placeholder="電話"><p></p>
+                            <input class="input" type="text"　 placeholder="電話">
                             <label for="">Email</label>
-                            <input class="input" type="text"　 placeholder="E-Mail"><p></p>
-                        <div class="bottom">summit</div>
+                            <input class="input" type="text"　 placeholder="E-Mail">
+                        <div class="bottom">提交</div>
                         </form>
 
 
